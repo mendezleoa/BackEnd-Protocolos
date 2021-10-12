@@ -104,11 +104,11 @@ var comerciales = [
 ];
 
 router.get('/', (req, res) => {
-  res.send('<h1>Bienvenido</h1');
+  res.send('<h1>Bienvenido</h1><h3>Para seguir el ejemplo de la ciudad ingrese a "/construccion"</h3>');
 });
 
 router.get("/construccion", (req, res) => {
-  res.send("<h2>Elige el tipo de construccion que busca</h2>")
+  res.send('<h2>Elige el tipo de construccion que busca:</h2><p>"/casas"<br>"/edificios"<br>"/apartamentos"<br>"/carreteras"<br>"/puentes"<br>"/parques"<br>"/comerciales"<br><p>')
 });
 
 
